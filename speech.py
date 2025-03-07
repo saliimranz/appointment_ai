@@ -1,7 +1,6 @@
 # speech.py
 import os
 from transformers import pipeline
-from IPython.display import Audio, display
 from gtts import gTTS
 import streamlit as st
 
@@ -18,4 +17,6 @@ def tts_to_audio(text):
     output_file = "output.mp3"
     tts = gTTS(text=text, lang="en")
     tts.save(output_file)
+    
+    # Streamlit has its own built-in audio player
     st.audio(output_file, format="audio/mp3", autoplay=True)
