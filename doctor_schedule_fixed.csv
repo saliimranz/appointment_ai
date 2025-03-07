@@ -1,0 +1,100 @@
+DoctorName,Date,Time,PatientName
+Dr. Alice,2025-02-01,09:00,Patient 91
+Dr. Alice,2025-02-01,10:00,
+Dr. Alice,2025-02-01,11:00,Patient 81
+Dr. Alice,2025-02-01,14:00,
+Dr. Alice,2025-02-01,15:00,
+Dr. Alice,2025-02-01,16:00,Patient 23
+Dr. Bob,2025-02-01,09:00,
+Dr. Bob,2025-02-01,10:00,Patient 22
+Dr. Bob,2025-02-01,11:00,Patient 52
+Dr. Bob,2025-02-01,14:00,Patient 93
+Dr. Bob,2025-02-01,15:00,Patient 52
+Dr. Bob,2025-02-01,16:00,Patient 84
+Dr. Carol,2025-02-01,09:00,
+Dr. Carol,2025-02-01,10:00,
+Dr. Carol,2025-02-01,11:00,
+Dr. Carol,2025-02-01,14:00,
+Dr. Carol,2025-02-01,15:00,Patient 70
+Dr. Carol,2025-02-01,16:00,
+Dr. Alice,2025-02-02,09:00,Patient 80
+Dr. Alice,2025-02-02,10:00,Patient 64
+Dr. Alice,2025-02-02,11:00,Patient 81
+Dr. Alice,2025-02-02,14:00,
+Dr. Alice,2025-02-02,15:00,Patient 64
+Dr. Alice,2025-02-02,16:00,Patient 80
+Dr. Bob,2025-02-02,09:00,Patient 24
+Dr. Bob,2025-02-02,10:00,
+Dr. Bob,2025-02-02,11:00,
+Dr. Bob,2025-02-02,14:00,
+Dr. Bob,2025-02-02,15:00,
+Dr. Bob,2025-02-02,16:00,
+Dr. Carol,2025-02-02,09:00,Patient 11
+Dr. Carol,2025-02-02,10:00,Patient 21
+Dr. Carol,2025-02-02,11:00,Patient 25
+Dr. Carol,2025-02-02,14:00,Patient 71
+Dr. Carol,2025-02-02,15:00,Patient 82
+Dr. Carol,2025-02-02,16:00,
+Dr. Alice,2025-02-03,09:00,
+Dr. Alice,2025-02-03,10:00,Patient 73
+Dr. Alice,2025-02-03,11:00,
+Dr. Alice,2025-02-03,14:00,Patient 70
+Dr. Alice,2025-02-03,15:00,Patient 70
+Dr. Alice,2025-02-03,16:00,Patient 80
+Dr. Bob,2025-02-03,09:00,Patient 20
+Dr. Bob,2025-02-03,10:00,Patient 83
+Dr. Bob,2025-02-03,11:00,
+Dr. Bob,2025-02-03,14:00,Patient 31
+Dr. Bob,2025-02-03,15:00,
+Dr. Bob,2025-02-03,16:00,Patient 73
+Dr. Carol,2025-02-03,09:00,Patient 11
+Dr. Carol,2025-02-03,10:00,Patient 14
+Dr. Carol,2025-02-03,11:00,Patient 62
+Dr. Carol,2025-02-03,14:00,Patient 30
+Dr. Carol,2025-02-03,15:00,Patient 14
+Dr. Carol,2025-02-03,16:00,Patient 75
+Dr. Alice,2025-02-04,09:00,Patient 74
+Dr. Alice,2025-02-04,10:00,Patient 84
+Dr. Alice,2025-02-04,11:00,Patient 70
+Dr. Alice,2025-02-04,14:00,
+Dr. Alice,2025-02-04,15:00,Patient 90
+Dr. Alice,2025-02-04,16:00,Patient 83
+Dr. Bob,2025-02-04,09:00,Patient 40
+Dr. Bob,2025-02-04,10:00,Patient 93
+Dr. Bob,2025-02-04,11:00,Patient 71
+Dr. Bob,2025-02-04,14:00,Patient 0
+Dr. Bob,2025-02-04,15:00,Patient 84
+Dr. Bob,2025-02-04,16:00,Patient 51
+Dr. Carol,2025-02-04,09:00,Patient 62
+Dr. Carol,2025-02-04,10:00,Patient 45
+Dr. Carol,2025-02-04,11:00,Patient 80
+Dr. Carol,2025-02-04,14:00,Patient 24
+Dr. Carol,2025-02-04,15:00,
+Dr. Carol,2025-02-04,16:00,Patient 32
+Dr. Alice,2025-02-05,09:00,
+Dr. Alice,2025-02-05,10:00,
+Dr. Alice,2025-02-05,11:00,Patient 63
+Dr. Alice,2025-02-05,14:00,Patient 35
+Dr. Alice,2025-02-05,15:00,
+Dr. Alice,2025-02-05,16:00,Patient 80
+Dr. Bob,2025-02-05,09:00,Patient 31
+Dr. Bob,2025-02-05,10:00,Patient 42
+Dr. Bob,2025-02-05,11:00,Patient 22
+Dr. Bob,2025-02-05,14:00,Patient 51
+Dr. Bob,2025-02-05,15:00,Patient 41
+Dr. Bob,2025-02-05,16:00,Patient 33
+Dr. Carol,2025-02-05,09:00,
+Dr. Carol,2025-02-05,10:00,Patient 21
+Dr. Carol,2025-02-05,11:00,Patient 65
+Dr. Carol,2025-02-05,14:00,Patient 22
+Dr. Carol,2025-02-05,15:00,Patient 15
+Dr. Carol,2025-02-05,16:00,
+Dr. Alice,2025-02-06,09:00,Patient 74
+Dr. Alice,2025-02-06,10:00,
+Dr. Alice,2025-02-06,11:00,Patient 60
+Dr. Alice,2025-02-06,14:00,Patient 53
+Dr. Alice,2025-02-06,15:00,
+Dr. Alice,2025-02-06,16:00,Patient 32
+Dr. Bob,2025-02-06,09:00,Patient 3
+Dr. Bob,2025-02-06,10:00,Patient 35
+Dr. Bob,2025-02-06,11:00,Patient 70
