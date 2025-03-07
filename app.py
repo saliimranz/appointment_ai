@@ -8,6 +8,14 @@ def main():
 
     uploaded_file = st.file_uploader("Upload Doctor's Schedule CSV", type=["csv"])
 
+    if uploaded_file:
+        CSV_FILE_PATH = "doctor_schedule_fixed.csv"
+        with open(CSV_FILE_PATH, "wb") as f:
+            f.write(uploaded_file.getbuffer())  # Save the file
+        st.success("File uploaded successfully!")
+    else:
+        st.warning("Please upload a CSV file to proceed.")
+
     if st.button("Call to Schedule Appointment"):
         st.session_state.running = True
         chat_session()

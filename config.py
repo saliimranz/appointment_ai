@@ -17,3 +17,7 @@ os.environ["HUGGINGFACEHUB_API_TOKEN"] = HF_TOKEN
 COLLECTION_NAME = "doctor_schedule_v2"
 CSV_FILE_PATH = "doctor_schedule_fixed.csv"
 USER_ID = 66
+
+# Check if the CSV file exists; if not, require user upload
+if not os.path.exists(CSV_FILE_PATH):
+    st.warning("No schedule file found. Please upload one in the app.")
