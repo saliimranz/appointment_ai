@@ -19,6 +19,7 @@ openai-whisper
 SpeechRecognition
 sounddevice
 soundfile
+gtts
 
 # Miscellaneous Utilities
 numpy
