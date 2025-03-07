@@ -1,0 +1,28 @@
+# Streamlit and Web Dependencies
+streamlit
+chromadb
+langchain
+langchain-community
+langchain-openai
+langchain-experimental
+huggingface_hub
+python-dotenv
+google-generativeai
+
+# LLM and Vector Processing
+transformers
+InstructorEmbedding
+sentence_transformers==2.2.2
+
+# STT (Speech-to-Text) and TTS (Text-to-Speech)
+openai-whisper
+TTS
+SpeechRecognition
+sounddevice
+soundfile
+
+# Miscellaneous Utilities
+numpy
+pandas
+requests
+typing-extensions
