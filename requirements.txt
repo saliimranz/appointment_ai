@@ -12,6 +12,9 @@ google-generativeai
 # LLM and Vector Processing
 transformers
 InstructorEmbedding
+torch
+torchvision
+torchaudio
 sentence_transformers==2.2.2
 
 # STT (Speech-to-Text) and TTS (Text-to-Speech)
