@@ -1,2 +1,4 @@
 python3.9
 sqlite3
+chromadb==0.3.26
+pysqlite3-binary
