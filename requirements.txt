@@ -1,6 +1,6 @@
 # Streamlit and Web Dependencies
 streamlit
-chromadb
+chromadb==0.3.26
 langchain
 langchain-community
 langchain-openai
@@ -8,6 +8,7 @@ langchain-experimental
 huggingface_hub==0.16.4
 python-dotenv
 google-generativeai
+pysqlite3-binary
 
 # LLM and Vector Processing
 transformers
