@@ -1,11 +1,13 @@
 # app.py
-import streamlit as st
+
 import os
+import subprocess
 
 # Fix: Force ChromaDB to use an updated SQLite version
 subprocess.run(["apt-get", "install", "-y", "sqlite3"], check=True)  # Install latest SQLite
 subprocess.run(["pip", "install", "--upgrade", "pysqlite3-binary"], check=True)  # Ensure Python uses updated SQLite
 
+import streamlit as st
 from vector_db import load_and_embed_data_unique
 from config import CSV_FILE_PATH
 
