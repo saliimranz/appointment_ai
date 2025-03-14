@@ -3,6 +3,7 @@ import pandas as pd
 import hashlib
 from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceInstructEmbeddings
+from InstructorEmbedding import INSTRUCTOR
 from config import CSV_FILE_PATH, COLLECTION_NAME
 
 def generate_slot_id(doctor, date, time):
