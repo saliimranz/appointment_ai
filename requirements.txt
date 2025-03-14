@@ -5,7 +5,7 @@ langchain
 langchain-community
 langchain-openai
 langchain-experimental
-huggingface_hub
+huggingface_hub==0.16.4
 python-dotenv
 google-generativeai
 
