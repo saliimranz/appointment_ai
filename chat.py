@@ -43,7 +43,7 @@ def chat_session():
         #     break
 
         # Fetch chat history
-        chat_history = get_user_chat_history(user_id)
+        chat_history = get_user_chat_history(user_id = USER_ID)
 
         # **Append the latest user query** before sending it to LLM
         updated_chat_history = f"{chat_history}\nUser: {user_query}"
@@ -56,7 +56,7 @@ def chat_session():
         # Retrieve context only when needed
         retrieved_context = query_vector_database(vectordb_unique, user_query) if intent == "Yes" else {"documents": []}
 
-        final_answer = generate_answer(user_id, user_query, retrieved_context["documents"])
+        final_answer = generate_answer(USER_ID, user_query, retrieved_context["documents"])
         print(f"\nA: {final_answer}")
 
         # Convert the final answer to speech using ElevenLabs TTS
@@ -69,8 +69,8 @@ def chat_session():
         if "confirmed" in final_answer.lower() or "yes" in final_answer.lower() or "correct" in final_answer.lower() or "okay" in final_answer.lower(): # Basic confirmation check
             appointment_info = extract_appointment_info(chat_history_str)
             if appointment_info:
-                update_appointment_csv(csv_file, appointment_info, user_id) #Pass user_id as patient name
-                update_slot_metadata_by_details(vectordb_unique, appointment_info, user_id)
+                update_appointment_csv(CSV_FILE_PATH, appointment_info, USER_ID) #Pass user_id as patient name
+                update_slot_metadata_by_details(vectordb_unique, appointment_info, USER_ID)
 
                 break # Exit the loop after processing the confirmed booking
             else:

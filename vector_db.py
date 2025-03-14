@@ -10,6 +10,13 @@ def generate_slot_id(doctor, date, time):
     unique_str = f"{doctor}_{date}_{time}"
     return hashlib.sha256(unique_str.encode()).hexdigest()
 
+def query_vector_database(vectordb, user_query, k=10):
+    # Search for the k most similar documents to the user query
+    results = vectordb.similarity_search(user_query, k=k)
+    # Concatenate the retrieved document texts to form a context string
+    context = "\n".join([doc.page_content for doc in results])
+    return {"documents": context, "results": results}
+
 def load_and_embed_data_unique(csv_file, collection_name="doctor_schedule_v2"):
     # Read the CSV file into a DataFrame
     df = pd.read_csv(csv_file)
@@ -60,5 +67,3 @@ def load_and_embed_data_unique(csv_file, collection_name="doctor_schedule_v2"):
     )
 
     return vectordb
-
-vectordb_unique = load_and_embed_data_unique()
