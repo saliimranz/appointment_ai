@@ -5,6 +5,11 @@ from vector_db import query_vector_database
 from intent import get_intent_and_query
 from config import USER_ID, CSV_FILE_PATH
 import streamlit as st
+import files
+from appointment import update_appointment_csv, update_slot_metadata_by_details
+from utils import extract_appointment_info
+from llm import generate_answer, get_user_chat_history
+from app import vectordb_unique
 
 def chat_session():
     global chat_history_str # Declare chat_history_str as global
