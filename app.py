@@ -1,6 +1,13 @@
 # app.py
 import streamlit as st
 import os
+from vector_db import load_and_embed_data_unique
+from config import CSV_FILE_PATH
+
+st.write("Initializing vector database... Please wait.")
+vectordb_unique = load_and_embed_data_unique(csv_file = CSV_FILE_PATH)
+st.success("Vector database initialized!")
+
 from chat import chat_session
 
 def main():
