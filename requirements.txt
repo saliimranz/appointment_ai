@@ -1,8 +1,6 @@
 # Streamlit and Web Dependencies
 streamlit
-chromadb==0.3.26
-duckdb
-tiktoken
+chromadb
 langchain
 langchain-community
 langchain-openai
