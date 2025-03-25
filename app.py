@@ -1,6 +1,7 @@
 # app.py
 
 import os
+import threading
 
 __import__('pysqlite3')
 import sys
@@ -10,9 +11,14 @@ import streamlit as st
 from vector_db import load_and_embed_data_unique
 from config import CSV_FILE_PATH
 
-st.write("Initializing vector database... Please wait.")
-vectordb_unique = load_and_embed_data_unique(csv_file = CSV_FILE_PATH)
-st.success("Vector database initialized!")
+def initialize_vector_db():
+    global vectordb_unique
+    st.write("Initializing vector database... Please wait.")
+    vectordb_unique = load_and_embed_data_unique(csv_file = CSV_FILE_PATH)
+    st.success("Vector database initialized!")
+
+vectordb_thread = threading.Thread(target=initialize_vector_db)
+vectordb_thread.start()
 
 from chat import chat_session
 
