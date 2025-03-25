@@ -44,4 +44,9 @@ def main():
 if __name__ == "__main__":
     if "running" not in st.session_state:
         st.session_state.running = False
+    # 🔥 Print logs to debug startup issues
+    print("Starting Streamlit app...")
+
+    # ✅ Ensure correct port
+    os.system("streamlit run app.py --server.port 8501 --server.address 0.0.0.0")
     main()
