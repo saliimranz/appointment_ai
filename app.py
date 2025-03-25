@@ -3,6 +3,9 @@
 import os
 import subprocess
 
+subprocess.run(["pip", "uninstall", "-y", "numpy"], check=True)
+subprocess.run(["pip", "install", "--no-cache-dir", "numpy"], check=True)
+
 subprocess.run(["pip", "install", "--no-cache-dir", "--force-reinstall", "pysqlite3-binary"], check=True)
 subprocess.run(["pip", "install", "--no-cache-dir", "--force-reinstall", "chromadb==0.3.26"], check=True)
 os.environ["PYTHON_SQLITE"] = "pysqlite3"
