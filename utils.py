@@ -3,7 +3,7 @@ from typing import Any, Dict, Optional
 import json
 import re
 import typing_extensions as typing 
-import genai
+import google.generativeai as genai
 
 
 def get_slot_id(vectordb, doctor_name, date, time):
