@@ -1,4 +1,4 @@
-import genai
+import google.generativeai as genai
 
 user_chat_history = {}
 
