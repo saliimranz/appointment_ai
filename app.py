@@ -1,10 +1,10 @@
 # app.py
 
 import os
-import subprocess
 
-subprocess.run(["pip", "install", "--no-cache-dir", "--force-reinstall", "pysqlite3-binary"], check=True)
-os.environ["PYTHON_SQLITE"] = "pysqlite3"
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import streamlit as st
 from vector_db import load_and_embed_data_unique
